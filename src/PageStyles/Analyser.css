@@ -1,0 +1,7 @@
+.analyserPage{
+    margin: 0px;
+    width: 100%;
+}
+#analyseBtn:hover{
+    background-color: #00e6ba;
+}

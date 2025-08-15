@@ -1,0 +1,215 @@
+/* Reset and base styles */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* html, body {
+  height: 100%;
+  overflow:auto;
+} */
+
+/* Main container */
+.profileContainer {
+  display: flex;
+  height: 100vh;
+  width: 100%;
+  background-color: #f3f4f6;
+}
+
+/* ===== LEFT SIDE: 30% full height, no padding/margin ===== */
+.leftSideContainer {
+  width: 30%;
+  border: black 2px;
+  box-shadow: 6px 0 15px rgba(0, 0, 0, 0.2);
+  display: flex;
+  flex-direction: column;
+  background-color: #2563eb;
+  box-shadow: #1e1e1e;
+}
+
+/* Top half */
+.leftTopProfile {
+    margin: 0px;
+    padding: 0px;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    background-color: #2563eb;
+}
+
+/* Profile content */
+.leftTopContent {
+  text-align: center;
+  padding-bottom: 10px;
+}
+
+.leftTopContent img {
+    margin-top: 10px;
+  border-radius: 50%;
+  width: 150px;
+  height: 150px;
+  border: 2px solid white;
+  object-fit: cover;
+  margin-bottom: 10px;
+}
+
+#HeadingName {
+  font-size: 18px;
+  font-weight: 600;
+  margin: 0px;
+  padding: 0px;
+}
+
+#HeadingMail {
+  font-size: 16px;
+  color: #ffffff;
+  word-break: break-word;
+}
+
+.lbc3:hover{
+  cursor: pointer;
+}
+
+/* Bottom half */
+.leftBottomContent {
+    padding-top: 20px;
+  flex: 1;
+  background-color: white;
+  color: #2563eb;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 15px;
+  width: 100%;             /* ensure full width */
+  height: 100%;            /* stretch fully inside */
+  padding: 0;              /* remove internal spacing */
+  margin: 0;               /* remove external spacing */
+  border-radius: 0;        /* remove rounded corners */
+}
+
+.leftBottomContent > div {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding-left: 25px; /* if you want the icons slightly indented */
+  font-size: 14px;
+  font-weight: 500;
+}
+
+
+.leftBottomContent img {
+  width: 24px;
+  height: 24px;
+}
+
+/* ===== RIGHT SIDE: 70% ===== */
+.rightSideContainer {
+  border: black 2px;
+  box-shadow: 6px 0 15px rgba(0, 0, 0, 0.2);
+  width: 70%;
+  display: flex;
+  flex-direction: column;
+  padding: 30px 40px;
+  background-color: white;
+  align-items: flex-start; /* ✅ Force children to align to the left */
+}
+
+.bioGraph {
+  flex: 8;
+  background-color: #f9fbff;
+  border-radius: 12px;
+  padding: 30px 20px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.08);
+  color: #1e1e1e;
+  overflow: hidden;
+  display: grid;
+  grid-template-columns: 180px auto; /* left column fixed, right flexible */
+  gap: 10px 20px;
+  text-align: left; /* ✅ Make text start from left */
+  align-items: flex-start; /* For flex children inside */
+}
+.bioGraph h2 {
+  grid-column: 1 / -1; /* make heading span both columns */
+}
+
+.bioGraph p {
+  margin: 0;
+  line-height: 1.6;
+}
+
+.bioGraph span.label {
+  font-weight: bold;
+}
+
+
+/* Bottom: Quote Box (20%) */
+.todayQuotes {
+  flex: 2;
+  background-color: #2563eb;
+  color: white;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 18px;
+  font-weight: 500;
+  letter-spacing: 0.5px;
+
+  padding: 25px 30px;   /* spacious for desktop */
+  line-height: 1.6;
+  text-align: center;
+  min-height: 120px;
+  box-sizing: border-box;
+}
+
+
+
+.todayQuotes span {
+  font-weight: bold;
+  margin-left: 6px;
+}
+/* Apply blur when modal is open */
+.blurred {
+  filter: blur(5px);
+  pointer-events: none; /* prevent interaction */
+  user-select: none;
+}
+
+
+/* Optional Responsive (can remove if single-screen only) */
+@media (max-width: 768px) {
+  .profileContainer {
+    flex-direction: column;
+    overflow-y: auto;
+  }
+
+  .leftSideContainer, .rightSideContainer {
+    width: 100%;
+    height: auto;
+  }
+
+  .todayQuotes {
+    font-size: 16px;   /* slightly smaller */
+    padding: 20px 20px; /* reduce side padding */
+    min-height: 100px;
+  }
+  html, body {
+    overflow: auto;
+  }
+}
+
+@media (max-width: 480px) {
+  .todayQuotes {
+    font-size: 15px;    /* more compact */
+    padding: 15px 15px; /* less padding to fit small screens */
+    min-height: 80px;
+  }
+}
