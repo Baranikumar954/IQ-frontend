@@ -23,7 +23,7 @@ export const Home = () => {
                 setProfile(response.data);
             }catch(err){
                 console.error("Error getting profile :", err);
-                alert("Something went wrong while getting profile.");
+                alert("Update your profile details on profile page.");
             }
         }
         fetchUserProfileInfo();
