@@ -73,9 +73,7 @@ export const Contact = () => {
             📬 <strong>Reach Out</strong><br />
             For any queries, suggestions, or support, you can contact us at:<br />
             📧 <a href="mailto:baranikumar952004@gmail.com">baranikumar952004@gmail.com</a><br />
-            📧 <a href="mailto:dvishwa764@gmail.com">dvishwa764@gmail.com</a><br />
-            📧 <a href="mailto:baranikumar952004@gmail.com">baranikumar952004@gmail.com</a><br />
-            📧 <a href="mailto:kathirkathir7082@gmail.com">kathirkathir7082@gmail.com</a>
+            📧 <a href="mailto:barani143kumar@gmail.com">barani143kumar@gmail.com</a><br />
           </p>
 
           <p>
