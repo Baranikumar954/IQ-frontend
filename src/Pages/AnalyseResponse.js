@@ -54,21 +54,21 @@ useEffect(() => {
         {report ? (
           <>
             <p><strong>ATS Score:</strong> <span className="ats-score">{animatedScore} / 100</span></p>
-
+            <br />
             <h3>Strengths</h3>
             <ul>
               {report.strengths?.map((item, idx) => (
                 <li key={idx}>{item}</li>
               ))}
             </ul>
-
+            <br />
             <h3>Weaknesses</h3>
             <ul>
               {report.weaknesses?.map((item, idx) => (
                 <li key={idx}>{item}</li>
               ))}
             </ul>
-
+              <br />
             <h3>Suggestions</h3>
             <ol>
               {report.suggestions?.map((item, idx) => (
