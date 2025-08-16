@@ -14,7 +14,8 @@ export const Footer = () => {
           </div>
           <div className="footer-divider"></div>
           <div className="footer-info">
-            <p>&copy; 2025 Baranikumar B | All Rights Reserved</p>
+            <p>&copy; 2025 <a href="https://iq-frontend-swart.vercel.app/">Baranikumar B </a>| All Rights Reserved</p>
+
           </div>
         </div>
       </footer>
