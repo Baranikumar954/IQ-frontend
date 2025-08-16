@@ -11,8 +11,9 @@ export const Feedbacks = () => {
   const [feedback, setFeedback] = useState('');
   const [feedbacks, setFeedbacks] = useState([]);
   const [avgRating, setAvgRating] = useState(0);
-  const {user}=useContext(DataContext);
-  const username = user.userName;
+  const {profile,user}=useContext(DataContext);
+  const fullName = [profile.fullName, profile.sureName].filter(Boolean).join(" ");
+  const username = fullName || user.userName;
   const email = user.mail;
 
 

@@ -113,7 +113,7 @@ export const Question = () => {
           <option value="Accenture">Accenture</option>
           <option value="Unknown">Others</option>
         </select>
-        <p>Temporary not available this service</p>
+        <p>The service is temporarily unavailable.</p>
 
         <br /><br />
 
@@ -123,13 +123,53 @@ export const Question = () => {
         </label>
         <select value={roleName} onChange={(e) => setRoleName(e.target.value)} required>
            <option value="" disabled>Select Role</option>
+          {/* <!-- Software Development --> */}
           <option value="Software Developer">Software Developer</option>
           <option value="Software Engineer">Software Engineer</option>
+          <option value="Frontend Developer">Frontend Developer</option>
+          <option value="Backend Developer">Backend Developer</option>
+          <option value="Full Stack Developer">Full Stack Developer</option>
+          <option value="Mobile App Developer">Mobile App Developer</option>
+          <option value="Game Developer">Game Developer</option>
+
+          {/* <!-- Data & AI/ML --> */}
           <option value="Data Scientist">Data Scientist</option>
           <option value="Data Analyst">Data Analyst</option>
-          <option value="Software Testing">Software Testing</option>
-          <option value="Dev Ops">Dev Ops</option>
-          <option value="other">others</option>
+          <option value="Business Analyst">Business Analyst</option>
+          <option value="Machine Learning Engineer">Machine Learning Engineer</option>
+          <option value="AI Engineer">AI Engineer</option>
+          <option value="Deep Learning Engineer">Deep Learning Engineer</option>
+          <option value="Big Data Engineer">Big Data Engineer</option>
+
+          {/* <!-- Cloud & DevOps --> */}
+          <option value="DevOps Engineer">DevOps Engineer</option>
+          <option value="Cloud Engineer">Cloud Engineer</option>
+          <option value="Site Reliability Engineer">Site Reliability Engineer</option>
+          <option value="System Administrator">System Administrator</option>
+
+          {/* <!-- Testing & QA --> */}
+          <option value="Software Tester">Software Tester</option>
+          <option value="Quality Assurance Engineer">Quality Assurance Engineer</option>
+          <option value="Automation Tester">Automation Tester</option>
+
+          {/* <!-- Security --> */}
+          <option value="Cybersecurity Analyst">Cybersecurity Analyst</option>
+          <option value="Security Engineer">Security Engineer</option>
+          <option value="Ethical Hacker">Ethical Hacker</option>
+
+          {/* <!-- Emerging Roles --> */}
+          <option value="Blockchain Developer">Blockchain Developer</option>
+          <option value="IoT Engineer">IoT Engineer</option>
+          <option value="AR/VR Developer">AR/VR Developer</option>
+
+          {/* <!-- Management & Misc --> */}
+          <option value="Product Manager">Product Manager</option>
+          <option value="Project Manager">Project Manager</option>
+          <option value="Technical Support Engineer">Technical Support Engineer</option>
+          <option value="Database Administrator">Database Administrator</option>
+          <option value="UI/UX Designer">UI/UX Designer</option>
+
+          <option value="unknown">others</option>
         </select>
 
         <br /><br />
