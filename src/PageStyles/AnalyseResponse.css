@@ -2,6 +2,72 @@
     margin: 0px;
     width: 100vw;
 }
+/* Wrap your markdown in a container class */
+.markdown {
+  font-family: "Segoe UI", sans-serif;
+  line-height: 1.6;
+  color: #333;
+}
+
+/* Headings */
+.markdown h1 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  border-bottom: 2px solid #eee;
+  padding-bottom: 0.3rem;
+}
+
+.markdown h2 {
+  font-size: 1.5rem;
+  margin-top: 1.2rem;
+  margin-bottom: 0.6rem;
+}
+
+/* Paragraphs */
+.markdown p {
+  margin: 0.6rem 0;
+}
+
+/* Links */
+.markdown a {
+  color: #007acc;
+  text-decoration: none;
+}
+
+.markdown a:hover {
+  text-decoration: underline;
+}
+
+/* Lists */
+.markdown ol {
+  list-style-type: decimal; /* Numbers (1, 2, 3...) */
+  padding-left: 1.5rem;     /* Indentation */
+}
+
+.markdown ul {
+  list-style-type: decimal; /* Change bullets to numbers */
+  padding-left: 1.5rem;
+}
+
+.markdown li {
+  margin-bottom: 0.4rem;
+}
+
+/* Code blocks */
+.markdown pre {
+  background: #f5f5f5;
+  padding: 0.8rem;
+  border-radius: 6px;
+  overflow-x: auto;
+}
+
+.markdown code {
+  background: #f0f0f0;
+  padding: 0.2rem 0.4rem;
+  border-radius: 4px;
+  font-family: "Fira Code", monospace;
+  font-size: 0.9rem;
+}
 
 .btn-feedback{
     width: 26%;

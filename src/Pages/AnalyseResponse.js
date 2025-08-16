@@ -4,6 +4,7 @@ import { Header } from "../components/Header";
 import { Footer } from "../components/Footer";
 import '../PageStyles/AnalyseResponse.css';
 import { useNavigate } from "react-router-dom";
+import ReactMarkdown from "react-markdown";
 
 export const AnalyseResponse = () => {
   const { analyseResponseData } = useContext(DataContext);
@@ -58,21 +59,21 @@ useEffect(() => {
             <h3>Strengths</h3>
             <ul>
               {report.strengths?.map((item, idx) => (
-                <li key={idx}>{item}</li>
+                <li key={idx}><ReactMarkdown>{item}</ReactMarkdown></li>
               ))}
             </ul>
             <br />
             <h3>Weaknesses</h3>
             <ul>
               {report.weaknesses?.map((item, idx) => (
-                <li key={idx}>{item}</li>
+                <li key={idx}><ReactMarkdown>{item}</ReactMarkdown></li>
               ))}
             </ul>
               <br />
             <h3>Suggestions</h3>
             <ol>
               {report.suggestions?.map((item, idx) => (
-                <li key={idx}>{item}</li>
+                <li key={idx}><ReactMarkdown>{item}</ReactMarkdown></li>
               ))}
             </ol>
             <br />
