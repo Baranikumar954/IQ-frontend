@@ -8,7 +8,7 @@ import {
 import DataContext from '../context/DataProvider';
 
 export const Header = () => {
-  const { user, setUser } = useContext(DataContext);
+  const { user, setUser,profile } = useContext(DataContext);
   const navigate = useNavigate();
   const [isSidebarOpen, setIsSidebarOpen] = useState(false);
 
@@ -18,7 +18,8 @@ export const Header = () => {
     navigate("/login");
   };
 
-  const displayName = user.userName;
+  const fullName = [profile.fullName, profile.sureName].filter(Boolean).join(" ");
+  const displayName = fullName || user.userName;
 
   return (
     <>
