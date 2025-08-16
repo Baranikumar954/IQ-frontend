@@ -14,7 +14,7 @@ export const Footer = () => {
           </div>
           <div className="footer-divider"></div>
           <div className="footer-info">
-            <p>&copy; 2025 <a href="https://baranikumar954.github.io/myWebsiteBk/" style={{ textDecoration: "none" }}>Baranikumar B </a>| All Rights Reserved</p>
+            <p>&copy; 2025 <a href="https://baranikumar954.github.io/myWebsiteBk/"  target='_blank' style={{ textDecoration: "none" }}>Baranikumar B </a>| All Rights Reserved</p>
 
           </div>
         </div>
