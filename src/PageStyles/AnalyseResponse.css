@@ -25,7 +25,9 @@
 
 /* Paragraphs */
 .markdown p {
+  line-height: 1.5;
   margin: 0.6rem 0;
+
 }
 
 /* Links */
