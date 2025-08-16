@@ -36,7 +36,7 @@ export const EditProfile = ({onClose}) => {
     const handleSubmit = async(e)=>{
         e.preventDefault();
         try{
-          const response =await api.put(`/user/edit/profile/${profile.id}`, formData);
+          const response =await api.put(`/user/edit/profile/${profile._id}`, formData);
           setProfile(response.data); // Update global profile
           alert("Profile updated successfully!");
           onClose(); // Close modal
